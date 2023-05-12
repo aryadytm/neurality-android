@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Game Title -->
+
+    <string name="game_title_verbalfrenzy">Word Frenzy</string>
+    <string name="game_title_numberrecall">Number Recall</string>
+    <string name="game_title_digitspan">Digit Span</string>
+    <string name="game_title_martialarts">Martial Arts</string>
+
+    <string name="game_title_highestnumber">Highest Number</string>
+    <string name="game_title_truefalse">True False</string>
+    <string name="game_title_exactvalue">Exact Value</string>
+    <string name="game_title_salary">Salary Negotiation</string>
+
+    <string name="game_title_differentshape">Shape Match</string>
+    <string name="game_title_colormatch">Color Match</string>
+    <string name="game_title_objectfinder">Object Search</string>
+    <string name="game_title_uniqueone">The Unique One</string>
+
+    <string name="game_title_simpletrouble">Task Switch</string>
+    <string name="game_title_textswitch">Text Switch</string>
+    <string name="game_title_dayofweek">Day of the Week</string>
+    <string name="game_title_sequence">Sequence Problem</string>
+
+    <string name="game_title_featurematch">Visual Match</string>
+    <string name="game_title_visualrotation">Rotation Match</string>
+    <string name="game_title_partialshape">Partial Shape</string>
+    <string name="game_title_spatialarithmetic">Spatial Arithmetic</string>
+
+    <!-- Category -->
+
+    <string name="category_memory">Memory</string>
+    <string name="category_calculation">Calculation</string>
+    <string name="category_focus">Attention</string>
+    <string name="category_logic">Reasoning</string>
+    <string name="category_spatial">Spatial</string>
+
+    <!-- Subcategory -->
+
+    <string name="subcategory_verbal_memory">Verbal Memory</string>
+    <string name="subcategory_shortterm_memory">Short Term Memory</string>
+    <string name="subcategory_working_memory">Working Memory</string>
+    <string name="subcategory_visual_memory">Visual Memory</string>
+
+    <string name="subcategory_numerical_estimation">Numerical Estimation</string>
+    <string name="subcategory_numerical_processing">Numerical Processing</string>
+    <string name="subcategory_calculation_accuracy">Calculation Accuracy</string>
+
+    <string name="subcategory_mental_agility">Mental Agility</string>
+    <string name="subcategory_response_control">Response Control</string>
+    <string name="subcategory_focus_speed">Focus Speed</string>
+    <string name="subcategory_comprehension">Visual Attention</string>
+
+    <string name="subcategory_thinking_speed">Thinking Speed</string>
+    <string name="subcategory_information_processing">Information Processing</string>
+    <string name="subcategory_pattern_recognition">Pattern Recognition</string>
+
+    <string name="subcategory_spatial_awareness">Spatial Awareness</string>
+    <string name="subcategory_mental_rotation">Mental Rotation</string>
+    <string name="subcategory_spatial_association">Spatial Association</string>
+    <string name="subcategory_visualization">Visualization</string>
+
+    <!-- Description -->
+
+    <!-- Category: Memory -->
+    <string name="desc_verbal_frenzy">
+        Distinguish between new and seen words at screen. You have unlimited time, but you only
+        have 3 lives that decreases if you choose the wrong answer.
+    </string>
+    <string name="desc_numberrecall">
+        Given 3 lives and unlimited time, how many digits can you recall?
+    </string>
+    <string name="desc_digitspan">
+        You have 3 lives and unlimited time. Memorize the numbers in forwarding order.
+    </string>
+    <string name="desc_martialarts">
+        In order to become the martial arts master, you\'ll need quick memorizing skills. This workout
+        may help improve your visual memory. You will trained to memorize a sequence of martial arts moves.
+    </string>
+
+    <!-- Category: Calculation -->
+    <string name="desc_highest_number">
+        Calculate the mathematical operations as soon as possible, then determine which is the highest.
+        Wrong answer reduces your score.
+    </string>
+    <string name="desc_truefalse">
+        Calculate and determine whether mathematical operations were correct or wrong.
+        Your score will be reduced if you miscalculate it.
+    </string>
+    <string name="desc_exactvalue">
+        Calculate mathematical operations as fast as possible, then determine the exact value.
+        Don\'t forget, your score will be reduced if you miscalculate it.
+    </string>
+    <string name="desc_salary">
+        Your boss gives you an opportunity for you to get a higher salary.
+        You have 60 seconds to have a negotiate with your boss. How will you win the highest salary?
+    </string>
+
+    <!-- Category: Attention -->
+    <string name="desc_differentshape">
+        Remember one back shape that you\'ve seen, then determine whether the current shape is same
+        as the previous or not. Wrong answer reduces score. Be quick and precise!
+    </string>
+    <string name="desc_colormatch">
+        Determine if the meaning at the top matches the color at the bottom.
+        If you choose the wrong answer, score will be reduced. Be quick and precise!
+    </string>
+    <string name="desc_objectfinder">
+        You are ordered to find a determined object. It\'s like finding a needle in the haystack.
+        Find it as soon as possible!
+    </string>
+    <string name="desc_uniqueone">
+        You must find the most unique object on your screen. Find it as much as possible!
+    </string>
+
+    <!-- Category: Reasoning -->
+    <string name="desc_simpletrouble">
+        Determine whether the you\'ve seen fact matches question asked.
+        If you choose wrong answer, your score will be reduced. Be quick and logical!
+    </string>
+    <string name="desc_textswitch">
+        Ddetermine whether the fact you\'ve seen matches question.
+        If you choose wrong answer, your score will be reduced. Be quick and logical!
+        \n[TIP] <i>Vowel letters: A, I, U, E, O. Odd numbers: 1, 3, 5, 7, 9.</i>
+    </string>
+    <string name="desc_dayofweek">
+        You have 90 seconds to guess the day of the week as fast as possible.
+    </string>
+    <string name="desc_sequence">
+        You will given a sequence of numbers. Your job is to guess the number at empty box according to pattern.
+    </string>
+
+    <!-- Category: Spatial -->
+    <string name="desc_featurematch">
+        Could you determine if one box is identical to the other one? Do it as fast as possible.
+        Wrong answer will reduce your score.
+    </string>
+    <string name="desc_visualrotation">
+        If you could rotate one of the other box, could you determine if one box is identical to the other one?
+        Do it in 60 seconds. Wrong answer will reduce your score.
+    </string>
+    <string name="desc_partialshape">
+        Remember the previous shape. If current shape and it\'s color is same, select Yes.
+        If only the current color that matches the previous one, select Partly.
+        If only the current shape without it\'s color that matches the previous one, select Partly.
+        If no one is same, select No.
+        \nWrong answer reduces score. Be quick and precise!
+    </string>
+    <string name="desc_spatialarithmetic">
+        Do the operations as you do in math. But this is like adding and removing shapes.
+        Can you do it as fast as possible?
+    </string>
+
+    <!-- Misc -->
+    <string name="facebook_app_id" translatable="false">[REDACTED]</string>
+    <string name="fb_login_protocol_scheme" translatable="false">[REDACTED]</string>
+    <string name="uri_mp4_tutorial_verbalfrenzy" translatable="false">assets:///example_tut.mp4</string>
+    <string name="userdata_pref_key" translatable="false">userdata</string>
+</resources>

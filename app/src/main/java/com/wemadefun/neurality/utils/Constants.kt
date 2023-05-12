@@ -1,0 +1,94 @@
+package com.wemadefun.neurality.utils
+
+// Time Constants
+const val SECOND = 1000L
+const val MINUTE = SECOND * 60
+const val HOUR = MINUTE * 60
+const val DAY = HOUR * 24
+const val WEEK = DAY * 7
+const val MONTH = DAY * 30
+const val YEAR = DAY * 365
+
+// Configuration constants
+const val CONFIG_DB_PATH_USERDATA = "neurality_userdata"
+const val CONFIG_DB_PATH_FEEDBACK = "neurality_feedback"
+const val CONFIG_DB_PATH_MESSAGES = "neurality_messages"
+const val CONFIG_DB_PATH_PURCHASE = "neurality_purchases"
+const val CONFIG_ANONYMOUS_UID = "not_signed_in"
+const val CONFIG_SAVEONLINE_GAMES_PLAYED = 1
+const val CONFIG_REFERRER_REWARD_TIME = DAY * 3
+
+const val CONFIG_APP_URI = "[REDACTED]"
+const val CONFIG_APP_DOMAIN = "[REDACTED]"
+
+var CONFIG_ENERGY_MAX = 5
+var CONFIG_ENERGY_ADD_TIME_MS = MINUTE * 15
+
+const val CONFIG_SCORE_STREAK_BONUS = 5
+const val CONFIG_SCORE_BASE_CORRECT = 100
+
+const val CONFIG_TIME_LIMIT_40S = SECOND * 40   // Time limit in game group 1
+const val CONFIG_TIME_LIMIT_60S = SECOND * 60  // Time limit in game group 2
+const val CONFIG_TIME_LIMIT_90S = SECOND * 90  // Time limit in game group 3
+
+// AdMob Configs
+const val CONFIG_ADMOB_APP_ID = "[REDACTED]"
+const val CONFIG_ADMOB_BANNER_PAUSE = "[REDACTED]"
+const val CONFIG_ADMOB_REWARDED_ENERGY = "[REDACTED]"
+const val CONFIG_ADMOB_INTERSTITIAL_GAMEOVER = "[REDACTED]"
+const val CONFIG_ADMOB_NATIVE_STATS = "[REDACTED]"
+const val CONFIG_ADMOB_NATIVE_GAMEOVER = "[REDACTED]"
+
+// Service Constants
+const val CONST_NOT_SUBSCRIBED = 0
+const val CONST_SUBSCRIBED = 1
+
+// Game ID Constants
+const val ID_GAME_VERBALFRENZY = 0
+const val ID_GAME_HIGHESTNUMBER = 1
+const val ID_GAME_DIFFERENTSHAPE = 2
+const val ID_GAME_SIMPLETROUBLE = 3
+const val ID_GAME_FEATUREMATCH = 4
+const val ID_GAME_NUMBERRECALL = 5
+const val ID_GAME_DIGITSPAN = 6
+const val ID_GAME_MARTIALARTS = 7
+const val ID_GAME_TRUEFALSE = 8
+const val ID_GAME_EXACTVALUE = 9
+const val ID_GAME_SALARY = 10
+const val ID_GAME_COLORMATCH = 11
+const val ID_GAME_OBJECTFINDER = 12
+const val ID_GAME_UNIQUEONE = 13
+const val ID_GAME_DAYOFWEEK = 14
+const val ID_GAME_SEQUENCE = 15
+const val ID_GAME_TEXTSWITCH = 16
+const val ID_GAME_VISUALROTATION = 17
+const val ID_GAME_PARTIALSHAPE = 18
+const val ID_GAME_SPATIALARITHMETIC = 19
+
+// Neurality Score ID Constants
+const val ID_CATEGORY_MEMORY = 0
+const val ID_CATEGORY_CALCULATION = 1
+const val ID_CATEGORY_FOCUS = 2
+const val ID_CATEGORY_LOGIC = 3
+const val ID_CATEGORY_SPATIAL = 4
+
+// Game Subcategory ID Constants
+const val ID_SUBCATEGORY_VERBAL_MEMORY = 0
+const val ID_SUBCATEGORY_NUMERICAL_ESTIMATION = 1
+const val ID_SUBCATEGORY_MENTAL_AGILITY = 2
+const val ID_SUBCATEGORY_THINKING_SPEED = 3
+const val ID_SUBCATEGORY_SPATIAL_AWARENESS = 4
+const val ID_SUBCATEGORY_SHORTTERM_MEMORY = 5
+const val ID_SUBCATEGORY_WORKING_MEMORY = 6
+const val ID_SUBCATEGORY_VISUAL_MEMORY = 7
+const val ID_SUBCATEGORY_NUMERICAL_PROCESSING = 8
+const val ID_SUBCATEGORY_CALCULATION_ACCURACY = 9
+const val ID_SUBCATEGORY_RESPONSE_CONTROL = 10
+const val ID_SUBCATEGORY_FOCUS_SPEED = 11
+const val ID_SUBCATEGORY_COMPREHENSION = 12
+const val ID_SUBCATEGORY_INFORMATION_PROCESSING = 13
+const val ID_SUBCATEGORY_PATTERN_RECOGNITION = 14
+const val ID_SUBCATEGORY_MENTAL_ROTATION = 15
+const val ID_SUBCATEGORY_SPATIAL_ASSOCIATION = 16
+const val ID_SUBCATEGORY_VISUALIZATION = 17
+

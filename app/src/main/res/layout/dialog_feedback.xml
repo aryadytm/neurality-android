@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints="string"
+        android:background="@drawable/border_styled"
+        android:fontFamily="@font/roboto_light"
+        android:gravity="top|start"
+        android:hint="@string/please_tell_us_how_we_can_improve_neurality"
+        android:inputType="textMultiLine"
+        android:textColor="@color/text_darkgray"
+        app:layout_constraintBottom_toTopOf="@+id/button_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/curved_blue_24dp"
+        android:ellipsize="end"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/curved_gray_24dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto"
+        android:text="@string/cancel"
+        android:textColor="@color/text_darkgray"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

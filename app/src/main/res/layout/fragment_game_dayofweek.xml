@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.wemadefun.neurality.ui.games.dayofweek.DayOfWeekViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_game_pinkish"
+        tools:context="com.wemadefun.neurality.ui.games.highestnumber.HighestNumberGameFragment">
+
+        <include
+            layout="@layout/layout_game_timed"
+            app:viewModel="@{viewModel}" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_question"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            app:cardBackgroundColor="@color/darky_white"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.56">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:id="@+id/image_question"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="Question Image"
+                    android:paddingBottom="16dp"
+                    app:srcCompat="@drawable/ic_vector_calendar" />
+
+                <TextView
+                    android:id="@+id/text_currentDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="center"
+                    android:textColor="@color/text_darkgray"
+                    android:textSize="16sp"
+                    tools:text="Today is Sunday." />
+
+                <TextView
+                    android:id="@+id/text_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="center"
+                    android:textColor="@color/text_darkgray"
+                    android:textSize="16sp"
+                    tools:text="What day was 2 days ago?" />
+
+                <Button
+                    android:id="@+id/btn_choice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/curved_gray_24dp"
+                    android:elevation="0dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:onClick="@{() -> viewModel.onChoiceOneClick()}"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    tools:text="Friday" />
+
+                <Button
+                    android:id="@+id/btn_choice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/curved_gray_24dp"
+                    android:elevation="0dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:onClick="@{() -> viewModel.onChoiceTwoClick()}"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    tools:text="Saturday" />
+
+                <Button
+                    android:id="@+id/btn_choice3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/curved_gray_24dp"
+                    android:elevation="0dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:onClick="@{() -> viewModel.onChoiceThreeClick()}"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    tools:text="Monday" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/lottieLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/fullTransparent"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie_correct"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie_incorrect"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

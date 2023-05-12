@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        app:key="category_account"
+        app:title="Account">
+
+        <Preference
+            app:key="get_premium"
+            app:summary="@string/stop_wait_for_energy"
+            app:title="@string/get_premium_settings" />
+
+        <Preference
+            app:key="signout"
+            app:title="@string/sign_out_text"
+            app:summary="@string/please_sign_out"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="category_neurality"
+        app:title="Neurality">
+
+        <Preference
+            app:key="feedback"
+            app:title="@string/pref_feedback"
+            app:summary="@string/pref_feedback_subtitle"/>
+
+        <Preference
+            app:key="terms_of_service"
+            app:title="@string/terms_of_service"/>
+
+        <Preference
+            app:key="privacy_policy"
+            app:title="@string/privacy_policy"/>
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

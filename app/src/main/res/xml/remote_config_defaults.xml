@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+
+    <entry>
+        <key>is_premium_available</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>is_free_premium_available</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>is_free_premium_promoted</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>json_help_urls</key>
+        <value>{"About Neurality": "[REDACTED]"}</value>
+    </entry>
+
+    <entry>
+        <key>string_url_help</key>
+        <value>[REDACTED]</value>
+    </entry>
+    <entry>
+        <key>string_url_help_free_premium</key>
+        <value>[REDACTED]</value>
+    </entry>
+
+    <entry>
+        <key>string_url_legal_package</key>
+        <value>[REDACTED]en-neurality</value>
+    </entry>
+    <entry>
+        <key>string_url_terms_conditions</key>
+        <value>[REDACTED]en-terms-conditions</value>
+    </entry>
+    <entry>
+        <key>string_url_privacy_policy</key>
+        <value>[REDACTED]en-privacy-policy</value>
+    </entry>
+    <entry>
+        <key>string_url_app_icon</key>
+        <value>https://i.imgur.com/tvLSnHw.png</value>
+    </entry>
+
+
+</defaultsMap>

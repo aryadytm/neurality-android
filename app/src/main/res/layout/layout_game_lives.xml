@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.wemadefun.neurality.ui.games.GameViewModel" />
+    </data>
+
+    <merge>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white"
+            android:elevation="16dp">
+
+            <TextView
+                android:id="@+id/button"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_baseline_pause_24"
+                android:elevation="0dp"
+                android:fontFamily="@font/roboto_mono"
+                android:onClick="@{() -> viewModel.onPauseButtonClick()}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/_text_lives"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/lives"
+                android:textColor="@color/text_gray"
+                app:layout_constraintEnd_toStartOf="@+id/_text_score"
+                app:layout_constraintStart_toEndOf="@+id/button"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_lives"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@{viewModel.livesText}"
+                android:textColor="@color/text_blue"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/_text_lives"
+                app:layout_constraintStart_toStartOf="@+id/_text_lives"
+                app:layout_constraintTop_toBottomOf="@+id/_text_lives"
+                tools:text="3" />
+
+            <TextView
+                android:id="@+id/_text_scoreBonus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/bonus"
+                android:textColor="@color/text_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/_text_score"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_scoreBonus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@{viewModel.scoreBonusText}"
+                android:textColor="@color/text_blue"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/_text_scoreBonus"
+                app:layout_constraintStart_toStartOf="@+id/_text_scoreBonus"
+                app:layout_constraintTop_toBottomOf="@+id/_text_scoreBonus"
+                tools:text="+5" />
+
+            <TextView
+                android:id="@+id/_text_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/score_colon"
+                android:textColor="@color/text_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@{viewModel.scoreText}"
+                android:textColor="@color/text_blue"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/_text_score"
+                app:layout_constraintStart_toStartOf="@+id/_text_score"
+                app:layout_constraintTop_toBottomOf="@+id/_text_score"
+                tools:text="100" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </merge>
+
+
+</layout>

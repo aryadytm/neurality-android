@@ -1,0 +1,268 @@
+<resources>
+    <string name="app_name" translatable="false">Neurality</string>
+    <string name="title_stats">Performance</string>
+    <string name="title_train">Workout</string>
+    <string name="title_settings">Settings</string>
+
+    <string name="url_legal">[REDACTED]en-neurality</string>
+    <string name="url_termsofservice">[REDACTED]en-terms-conditions</string>
+    <string name="url_privacypolicy">[REDACTED]en-privacy-policy</string>
+
+    <!-- Premium Strings -->
+    <string name="cancelled_text">You cancelled the purchase</string>
+    <string name="msg_purchase_error">Purchase error. Please restart Neurality and make sure you are connected to internet</string>
+    <string name="text_success">Purchase success</string>
+
+    <string name="get_premium_settings">Get Premium</string>
+    <string name="get_premium">Get Premium</string>
+    <string name="start_your_free_trial">START YOUR FREE TRIAL</string>
+    <string name="start_your_neurality_subscription">Start Your Neurality Premium Free Trial</string>
+    <string name="train_your_brain_anytime">Train Your Brain Anytime</string>
+
+    <string name="in_depth_insights">Train Your Brain Anytime</string>
+    <string name="unlimited_access_to">Unlimited Access to All Brain Games</string>
+    <string name="completely_removed_ads">Completely Removed Ads</string>
+
+    <string name="monthly_first_7_days_free">Monthly - First 7 days free</string>
+    <string name="yearly_first_14_days_free">Yearly - First 14 days free</string>
+
+    <string name="restore_purchase">Restore Purchase</string>
+    <string name="subscription_terms">Subscription Terms</string>
+    <string name="terms_conditions">Terms &amp; Conditions</string>
+    <string name="you_can_cancel">You can cancel anytime</string>
+
+    <string name="price_monthly">$4.99/month</string>
+    <string name="price_yearly">$49.99/year</string>
+    <string name="price_monthly_param">%1$s/month</string>
+    <string name="price_yearly_param">%1$s/year</string>
+
+    <string name="pricing_terms"><b>Subscription &amp; Pricing Terms</b>
+        \n\n• Free trial only available for new users.
+        Payment will be charged to your Google Play account after your free trial ends.
+
+        \n• Any unused portion of a free trial period
+        will be forfeited when the user purchases a subscription to that service.
+
+        \n• If you subscribe after your free trial ends, your Google Play account will
+        immediately charged after the confirmation of the purchase.
+
+        \n• Subscription automatically renews unless auto-renew is turned off at least 24 hours
+        before the end of the current period.
+    </string>
+    <!-- End Premium String -->
+
+    <string name="pref_account">Account</string>
+    <string name="pref_neurality">Neurality</string>
+    <string name="pref_nq_string">%1$s NQ</string>
+
+    <string name="pref_feedback">Message Us</string>
+    <string name="pref_feedback_subtitle">
+        Do you need a support about Neurality?
+        Or you found bugs and errors?
+        You can send us a message here.</string>
+    <string name="please_enter_email">Please enter your contact email</string>
+    <string name="please_enter_message">Please enter your message</string>
+
+    <string-array name="pref_feedback_category">
+        <item>General</item>
+        <item>Bugs &amp; Error</item>
+        <item>Subscription</item>
+    </string-array>
+
+    <string name="high_score_sample">High Score: 122</string>
+    <string name="your_best_score">Your Top 5 Score</string>
+    <string name="help">Help</string>
+    <string name="start">Start</string>
+    <string name="game_preview">Game preview</string>
+    <string name="verbalfrenzy">Verbal Frenzy</string>
+    <string name="seen">Seen</string>
+    <string name="text_new">New</string>
+    <string name="lives">Lives</string>
+    <string name="score">Score</string>
+    <string name="play_other_workout">Play Other Workout</string>
+    <string name="replay">Replay</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="good_job">Good Job!</string>
+
+    <string name="get_ready">Get Ready!</string>
+    <string name="game_pause">GAME PAUSED</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="restart">Restart</string>
+    <string name="exit">Exit</string>
+    <string name="preparing_awesome_games">Preparing awesome games…</string>
+
+    <string name="error_offline">Internet Connection Error</string>
+    <string name="error_db_offline">Please make sure your device are connected to Internet.</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="please_sign_in">By continuing, you agree to Neurality\'s
+        <u>Terms &amp; Conditions</u> and <u>Privacy Policy</u></string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_google">Sign in with Google</string>
+    <string name="sign_in_facebook">Sign in with Facebook</string>
+    <string name="others">Others</string>
+    <string name="high_score">High Score</string>
+    <string name="syncing_data">Syncing Data…</string>
+    <string name="please_sign_out">Sign out if you want to change your account.</string>
+    <string name="stop_wait_for_energy">Stop waiting for energy. Premium will give you unlimited energy.</string>
+    <string name="sign_out_text" translatable="false">Sign Out</string>
+    <string name="about">About</string>
+    <string name="terms_of_service">Terms and Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="neurality_score">Neurality Quotient (NQ)</string>
+    <string name="category_by">Performance</string>
+    <string name="game_by">High Score</string>
+    <string name="play_all_games_to_standarize_your_scores">Play all workouts to standarize your scores.</string>
+    <string name="welcome_to_neurality">Welcome to Neurality!</string>
+    <string name="signing_in">Stepping inside…</string>
+    <string name="error_signing_in">Signing In Error</string>
+    <string name="syncing_neurality">We\'re preparing something for you…</string>
+    <string name="error_fetch_userdata">Fetch User Data Error</string>
+    <string name="no_energy">You don\'t have any energy.</string>
+    <string name="free_energy">Free Energy</string>
+    <string name="free_energy_succeed">Extra energy! Now you\'re ready to rock!</string>
+    <string name="how_good_neurality">How good is Neurality to you?</string>
+    <string name="rate_this">Rate</string>
+    <string name="never">Never</string>
+    <string name="later">Later</string>
+    <string name="rate_neurality">Rate Neurality</string>
+    <string name="please_tell_us_how_we_can_improve_neurality">Please tell us how we can improve Neurality…</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="please_enter_rating">Please enter your rating.</string>
+    <string name="please_enter_feedback">Please enter your feedback.</string>
+    <string name="workout_details">Workout Details</string>
+
+    <string name="featured_games">Featured Games</string>
+    <string name="game_image">Game Image</string>
+    <string name="energy_colon">Energy:</string>
+    <string name="why_skip">"Why you\'d skipped your free energy!?"</string>
+    <string name="higherups_greatest_value">Tap the greatest value.</string>
+    <string name="time">Time</string>
+    <string name="score_colon">Score</string>
+    <string name="equal">EQUAL</string>
+    <string name="share">SHARE</string>
+    <string name="bonus">Bonus</string>
+    <string name="question_symbolmatch">Does the shape match the previous one?</string>
+    <string name="yes">Yes</string>
+    <string name="notext">No</string>
+    <string name="question_remember_shape">Remember this shape!</string>
+    <string name="question_simpletrouble_bot">Is the left number higher than the right number?</string>
+    <string name="question_simpletrouble_top">Does the color of the triangle is green?</string>
+    <string name="question_featurematch">Are these two images match each other?</string>
+    <string name="feature_match_item">Feature Match Item</string>
+    <string name="mismatch">Mismatch</string>
+    <string name="match">Match</string>
+    <string name="question_numberrecall_1">Memorize the numbers!</string>
+    <string name="enter_here">Enter here…</string>
+    <string name="question_numberrecall_2">What was the numbers?</string>
+    <string name="please_enter_answer">Please enter your answer.</string>
+
+    <string name="question_martialarts_1">Memorize this move sequence!</string>
+    <string name="question_martialarts_2">Now replicate the move sequence.</string>
+
+    <string name="answer_true">True</string>
+    <string name="answer_false">False</string>
+
+    <string name="question_salary">Obtain the highest possible salary.</string>
+    <string name="current_salary">Current Salary</string>
+    <string name="your_next_salary">Choose your next salary.</string>
+
+    <string name="truecolor_meaning">Meaning</string>
+    <string name="truecolor_color">Color</string>
+    <string name="truecolor_text_blue">BLUE</string>
+    <string name="truecolor_text_green">GREEN</string>
+    <string name="truecolor_text_red">RED</string>
+    <string name="truecolor_text_yellow">YELLOW</string>
+    <string name="truecolor_text_black">BLACK</string>
+    <string name="question_truecolor">Does the <b>meaning</b> match the <b>color</b>?</string>
+    <string name="question_objectfinder">Find This</string>
+    <string name="question_uniqueone">Find the most unique object.</string>
+
+    <string-array name="days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string name="today_is">Today is %1$s</string>
+    <string name="day_tommorow">What day will be in tomorrow?</string>
+    <string name="day_yesterday">What day was yesterday?</string>
+    <string name="day_was">What day was %1$s days ago?</string>
+    <string name="day_will">What day will be in %1$s days?</string>
+    <string name="question_sequence">Complete the number sequence.</string>
+    <string name="question_textswitch_bot">Is the number odd?</string>
+    <string name="question_textswitch_top">Is the letter vowel?</string>
+    <string name="question_visualrotation">Are the items inside these two images were the same?</string>
+    <string name="stats_advertising">Advertising</string>
+    <string name="partly">PARTLY</string>
+    <string name="plus_sign">+</string>
+    <string name="exit_neurality">Exit Neurality</string>
+    <string name="are_you_sure">Are you sure you want to exit Neurality?</string>
+
+    <string name="enter_your_name">Your Name…</string>
+    <string name="description">Description</string>
+    <string name="tutorial_included">Tutorial for this game is included inside.</string>
+
+    <string name="tutorial_verbalfrenzy">
+        Tap \"New\" when you first time see the word. If you seen the word before, tap \"Seen\"
+    </string>
+
+    <string name="feedback_title">We\'re Happy to Hear from You</string>
+    <string name="enter_your_message_here">Enter your message here…</string>
+    <string name="thanks_feedback">Thank you for your feedback!</string>
+    <string name="overall_neurality_performance">This is your overall Neurality performance.</string>
+    <string name="play_over_20_brain_games_that_challenges_your_memory_logic_and_more">Play over 20 brain games that challenges your memory, logic, and more.</string>
+    <string name="premium_not_available_msg">Sorry, Neurality Premium is currently not available in your country.</string>
+    <string name="not_available_msg">Stay Tuned</string>
+    <string name="good_news">Good News</string>
+    <string name="premium_available_msg">Neurality Premium is now available!</string>
+    <string name="get_it_now">Get it now</string>
+    <string name="sorry_premium_game">Play this game now by becoming a Neurality Premium user.</string>
+    <string name="duplicate_email">The email you used to sign in was registered with a different provider. Please use a different account.</string>
+    <string name="your_performance">Your Performance</string>
+
+    <string name="get_free_energy">Get Free Energy</string>
+    <string name="msg_watch_video_ad">Watch the video ad until it\'s finished to get your energy.</string>
+    <string name="add_energy">Add</string>
+    <string name="referral_title">YOU GIVE IT, YOU GET IT!</string>
+    <string name="referral_description">Enjoying Neurality? Invite your friends to try it out and you\'ll both get a 3 days of Neurality Premium for free.</string>
+    <string name="referral_btn">INVITE YOUR FRIENDS</string>
+    <string name="help_sign">\?</string>
+    <string name="train_get_free_premium">Free Premium is Available</string>
+    <string name="arrow_right"><![CDATA[>]]></string>
+    <string name="prefs_desc_free_premium">Enjoying Neurality? Get your free Premium here.</string>
+    <string name="referral_link_title">Neurality: Brain Training App</string>
+    <string name="referral_link_desc">Claim your free Neurality Premium. Start train your brain!</string>
+    <string name="referral_share_msg">
+        Download the Neurality mobile brain training app with my link, sign up and then we\'ll both get a 3-days of Neurality Premium for free!\n
+        %1$s
+    </string>
+    <string name="feature_notavailable">Sorry, this feature is currently not supported on your device. Stay tuned until next update!</string>
+    <string name="signin_referral_invalid">Invitation invalid. Same device or account is already exists.</string>
+    <string name="signin_referral_valid">Invitation success. Enjoy your free 3-days of Neurality Premium!</string>
+    <string name="signin_referral_using_invitation">Using invitation. Sign in to claim your free Neurality Premium.</string>
+    <string name="prefs_help">Help</string>
+    <string name="signin_welcome_premium">Welcome to Neurality Premium</string>
+    <string name="signin_skip">Later</string>
+    <string name="signin_dialog_age">How old are you? Please select your age group.</string>
+    <string name="signin_dialog_overeighteen">18 years or over</string>
+    <string name="signin_dialog_undereighteen">Under 18 years</string>
+    <string name="signin_dialog_anonymous_warning">You will not be able to sync your training data across devices until you sign in. Are you sure?</string>
+    <string name="signin_dialog_anonymous_continue">Continue</string>
+    <string name="signin_dialog_anonymous_back">Back</string>
+    <string name="dialog_must_authenticated">You need to be authenticated to view this section. Please sign in.</string>
+    <string name="msg_browser_error">Cannot detect a browser to open. Please install a browser (such as Google Chrome) on your device.</string>
+
+    <string name="pref_uid_placeholder">UID: %1$s</string>
+    <string name="pref_version_placeholder">Neurality v%1$s (%2$s)</string>
+
+    <string name="file_pref_userdata" translatable="false">utils.userdata</string>
+    <string name="file_pref_application" translatable="false">utils.application</string>
+
+</resources>

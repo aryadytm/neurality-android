@@ -1,0 +1,127 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'androidx.navigation.safeargs'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    signingConfigs {
+        release {}
+    }
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "com.wemadefun.neurality"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 50
+        versionName "1.3.10"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        signingConfig signingConfigs.release
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        // Determines whether to support View Binding.
+        // Note that the viewBinding.enabled property is now deprecated.
+        viewBinding = true
+        // Determines whether to support Data Binding.
+        // Note that the dataBinding.enabled property is now deprecated.
+        dataBinding = true
+    }
+
+    // To inline the bytecode built with JVM target 1.8 into
+    // bytecode that is being built with JVM target 1.6. (e.g. navArgs)
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+}
+
+dependencies {
+    // Base
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    // AndroidX (Architecture Components)
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.3.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation "androidx.navigation:navigation-runtime-ktx:2.3.0"
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.0'
+    implementation "androidx.fragment:fragment-ktx:1.2.5"
+    implementation 'androidx.preference:preference-ktx:1.1.1'
+
+    // Firebase
+    implementation 'com.google.firebase:firebase-firestore-ktx:21.5.0'
+    implementation 'com.google.firebase:firebase-analytics-ktx:17.4.4'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx:17.1.1'
+    implementation 'com.google.firebase:firebase-auth-ktx:19.3.2'
+    implementation 'com.google.firebase:firebase-config-ktx:19.2.0'
+    implementation 'com.google.firebase:firebase-dynamic-links-ktx:19.1.0'
+    implementation 'com.firebaseui:firebase-ui-auth:6.2.0'
+
+    // Google for Android
+    implementation 'com.google.android.gms:play-services-ads:19.2.0'
+    implementation 'com.google.android.gms:play-services-auth:18.0.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.10.5'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.10.5'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.10.5'
+
+    // Google Billing Library
+    implementation 'com.android.billingclient:billing-ktx:3.0.0'
+
+    // Facebook
+    implementation 'com.facebook.android:facebook-login:5.15.3'
+
+    // Misc
+    implementation 'com.github.bumptech.glide:glide:4.11.0' // Image loading library
+    kapt 'com.github.bumptech.glide:compiler:4.11.0' // Image loading annotation processor
+    implementation 'com.google.code.gson:gson:2.8.6' // JSON Manipulation Library
+    implementation 'com.akexorcist:round-corner-progress-bar:2.1.0' // Round Corner Progress Bars
+    implementation 'com.github.medyo:fancybuttons:1.9.1' // Custom Buttons
+    implementation 'com.github.f0ris.sweetalert:library:1.6.2' // SweetAlert
+    implementation 'com.google.android.material:material:1.1.0' // Material Design Library
+    implementation 'com.airbnb.android:lottie:3.4.1' // Lottie Animation Library
+    implementation 'com.mikhaellopez:circularprogressbar:3.0.3' // Circular Progress Bar
+    implementation 'com.android.volley:volley:1.1.1' // Requests
+
+    // Kotlin Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.0"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0"
+
+    // Dependency Injection
+    implementation 'com.google.dagger:dagger:2.28'
+    implementation 'com.google.dagger:dagger-android-support:2.28'
+    kapt 'com.google.dagger:dagger-compiler:2.28'
+    kapt 'com.google.dagger:dagger-android-processor:2.28'
+
+    // Utils
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // Modules
+    implementation project(':nativetemplates')
+}

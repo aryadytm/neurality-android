@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="url_legal">[REDACTED]id-neurality</string>
+    <string name="url_termsofservice">[REDACTED]id-terms-of-service</string>
+    <string name="url_privacypolicy">[REDACTED]id-privacy-policy</string>
+
+    <!-- Premium Strings Start -->
+    <string name="cancelled_text">Anda membatalkan transaksi</string>
+    <string name="msg_purchase_error">Transaksi gagal. Mohon restart Neurality dan pastikan terhubung ke Internet</string>
+    <string name="text_success">Transaksi berhasil</string>
+
+    <string name="stop_wait_for_energy">Jangan menunggu energi. Latih otakmu kapan saja.</string>
+
+    <string name="get_premium_settings">Dapatkan Premium</string>
+    <string name="get_premium">Go Premium</string>
+    <string name="start_your_free_trial">COBA PREMIUM GRATIS</string>
+    <string name="start_your_neurality_subscription">Mulai Masa Percobaan Neurality Premium</string>
+    <string name="train_your_brain_anytime">Latih Otakmu Kapan Saja</string>
+
+    <string name="in_depth_insights">Latih Otakmu Kapan Saja</string>
+    <string name="unlimited_access_to">Akses Tidak Terbatas ke Seluruh Latihan</string>
+    <string name="completely_removed_ads">Dilenyapkan Seluruh Iklan</string>
+
+    <string name="monthly_first_7_days_free">Bulanan - 7 hari pertama gratis</string>
+    <string name="yearly_first_14_days_free">Tahunan - 14 hari pertama gratis</string>
+    <string name="price_monthly">Rp. 49.000/bulan</string>
+    <string name="price_yearly">Rp. 499.000/tahun</string>
+    <string name="price_monthly_param">%1$s/bulan</string>
+    <string name="price_yearly_param">%1$s/tahun</string>
+
+    <string name="restore_purchase">Pulihkan Pembelian</string>
+    <string name="terms_conditions">Syarat &amp; Ketentuan</string>
+    <string name="subscription_terms">Ketentuan Berlangganan</string>
+    <string name="you_can_cancel">Anda bisa membatalkannya kapan saja</string>
+
+    <string name="pricing_terms"><b>Ketentuan Berlangganan &amp; Pembayaran</b>
+        \n\n• Uji coba gratis hanya berlaku untuk pengguna baru.
+        Pembayaran akan dibebankan ke akun Google Play Anda setelah uji coba gratis Anda berakhir.
+
+        \n• Jika Anda berlangganan setelah masa uji coba gratis berakhir, pembayaran Anda segera
+        dibebankan ke akun Google Play Anda setelah konfirmasi berlangganan.
+
+        \n• Jika masa uji coba sedang aktif, sisa waktu periode uji coba gratis
+        akan hangus ketika pengguna mulai berlangganan layanan ini.
+
+        \n• Langganan diperbarui secara otomatis sesuai langganan Anda (bulanan atau tahunan) kecuali
+        fitur perbarui otomatis dinonaktifkan lebih dari 24 jam sebelum periode langganan berakhir.
+    </string>
+
+    <!-- Premium Strings End -->
+
+    <string name="pref_account">Akun</string>
+    <string name="pref_neurality">Neurality</string>
+    <string name="pref_nq_string">%1$s NQ</string>
+
+
+    <string name="pref_feedback">Kirim Kami Pesan</string>
+    <string name="pref_feedback_subtitle">
+        Kamu memiliki keluhan terhadap Neurality?
+        Atau menemukan bugs &amp; error?
+        Kamu dapat mengirimi kami pesan di sini.</string>
+
+    <string-array name="pref_feedback_category">
+        <item>Umum</item>
+        <item>Bugs &amp; Error</item>
+        <item>Langganan</item>
+    </string-array>
+    <string name="please_enter_feedback">Mohon masukkan pesan</string>
+    <string name="please_enter_email">Mohon masukkan email aktif Anda</string>
+
+    <string name="please_sign_in">Dengan melanjutkan, kamu menyetujui <u>Kebijakan Privasi</u>
+        dan <u>Syarat &amp; Ketentuan</u> Neurality</string>
+
+    <string name="title_stats">Kinerja</string>
+    <string name="title_train">Latihan</string>
+    <string name="title_settings">Setelan</string>
+
+    <string name="high_score_sample">Skor Tertinggi: 122</string>
+    <string name="your_best_score">Skor Top 5</string>
+    <string name="help">Bantuan</string>
+    <string name="start">Mulai</string>
+    <string name="game_preview">Perlihatkan Game</string>
+    <string name="verbalfrenzy">Verbal Frenzy</string>
+    <string name="seen">Dilihat</string>
+    <string name="text_new">Baru</string>
+    <string name="lives">Nyawa</string>
+    <string name="score">Skor</string>
+    <string name="play_other_workout">Menu Latihan Lain</string>
+    <string name="replay">Ulang</string>
+    <string name="congratulations">Selamat</string>
+    <string name="good_job">Selamat!</string>
+
+    <string name="get_ready">Bersiaplah!</string>
+    <string name="game_pause">PERMAINAN DIJEDA</string>
+    <string name="resume">Lanjut</string>string>
+    <string name="pause">Pause</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="restart">Ulang</string>
+    <string name="exit">Akhiri</string>
+    <string name="preparing_awesome_games">Mempersiapkan permainan hebat…</string>
+
+    <string name="error_offline">Masalah Koneksi Internet</string>
+    <string name="error_db_offline">Pastikan perangkatmu terhubung ke Internet.</string>
+    <string name="welcome_to">Selamat datang di</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_google">Sign in dengan Google</string>
+    <string name="sign_in_facebook">Sign in dengan Facebook</string>
+    <string name="others">Lainnya</string>
+    <string name="high_score">Skor Tertinggi</string>
+    <string name="syncing_data">Sinronisasi…</string>
+    <string name="please_sign_out">Sign out jika Anda ingin mengganti akun.</string>
+    <string name="about">Tentang</string>
+    <string name="terms_of_service">Syarat dan Ketentuan</string>
+    <string name="privacy_policy">Kebijakan Privasi</string>
+    <string name="neurality_score">Neurality Quotient (NQ)</string>
+    <string name="category_by">Performa</string>
+    <string name="game_by">Skor Tertinggi</string>
+    <string name="play_all_games_to_standarize_your_scores">Selesaikan seluruh permainan untuk menyesuaikan nilaimu.</string>
+    <string name="welcome_to_neurality">Selamat datang di Neurality!</string>
+    <string name="signing_in">Sedang masuk…</string>
+    <string name="error_signing_in">Sign In Error</string>
+    <string name="syncing_neurality">Sedang mempersiapkan sesuatu…</string>
+    <string name="error_fetch_userdata">Masalah sinkronisasi</string>
+    <string name="no_energy">Kamu kehabisan energi.</string>
+    <string name="free_energy">Energi Gratis</string>
+    <string name="free_energy_succeed">Energi tambahan telah didapatkan</string>
+    <string name="how_good_neurality">Sebaik apa Neurality untukmu?</string>
+    <string name="rate_this">Nilai</string>
+    <string name="never">Skip</string>
+    <string name="later">Nanti</string>
+    <string name="rate_neurality">Nilai Neurality</string>
+    <string name="please_tell_us_how_we_can_improve_neurality">Bisakah kamu beritahu kami bagaimana cara memperbaiki Neurality…</string>
+    <string name="cancel">Batal</string>
+    <string name="submit">Kirim</string>
+    <string name="please_enter_rating">Tolong masukkan nilai.</string>
+    <string name="workout_details">Detail Latihan</string>
+
+    <string name="featured_games">Permainan Terpopuler</string>
+    <string name="game_image">Gambar Game</string>
+    <string name="energy_colon">Energi:</string>
+    <string name="why_skip">"Kenapa kamu tidak mau energi gratis~~?"</string>
+    <string name="higherups_greatest_value">Ketuk nilai tertinggi.</string>
+    <string name="time">Waktu</string>
+    <string name="score_colon">Skor</string>
+    <string name="equal">SEIMBANG</string>
+    <string name="share">BAGIKAN</string>
+    <string name="bonus">Bonus</string>
+    <string name="question_symbolmatch">Apakah bentuk ini sama dengan sebelumnya?</string>
+    <string name="yes">Ya</string>
+    <string name="notext">Tidak</string>
+    <string name="question_remember_shape">Ingatlah bentuk ini!</string>
+    <string name="question_simpletrouble_bot">Apakah angka di sebelah kiri lebih besar dari angka di sebelah kanan?</string>
+    <string name="question_simpletrouble_top">Apakah warna segitiga hijau?</string>
+    <string name="question_featurematch">Apakah kedua gambar terlihat sama persis?</string>
+    <string name="feature_match_item">Feature Match Item</string>
+    <string name="mismatch">Berbeda</string>
+    <string name="match">Sama</string>
+    <string name="question_numberrecall_1">Hafalkan angka-angka ini!</string>
+    <string name="enter_here">Ketik di sini…</string>
+    <string name="question_numberrecall_2">Sekarang ingat kembali angka tadi.</string>
+    <string name="please_enter_answer">Masukkan jawabanmu.</string>
+
+    <string name="question_martialarts_1">Hafalkan gerakan ini!</string>
+    <string name="question_martialarts_2">Sekarang ingatlah gerakan tadi secara berurutan.</string>
+
+    <string name="answer_true">Benar</string>
+    <string name="answer_false">Salah</string>
+
+    <string name="question_salary">Dapatkan gaji setinggi mungkin.</string>
+    <string name="current_salary">Gaji Saat Ini</string>
+    <string name="your_next_salary">Pilih gaji berikutnya.</string>
+
+    <string name="truecolor_meaning">Arti</string>
+    <string name="truecolor_color">Warna</string>
+    <string name="truecolor_text_blue">BIRU</string>
+    <string name="truecolor_text_green">HIJAU</string>
+    <string name="truecolor_text_red">MERAH</string>
+    <string name="truecolor_text_yellow">KUNING</string>
+    <string name="truecolor_text_black">HITAM</string>
+    <string name="question_truecolor">Apakah <b>arti</b> sesuai dengan <b>warna</b>?</string>
+    <string name="question_objectfinder">Temukan Benda Ini</string>
+    <string name="question_uniqueone">Temukan benda yang paling berbeda.</string>
+
+    <string-array name="days">
+        <item>Senin</item>
+        <item>Selasa</item>
+        <item>Rabu</item>
+        <item>Kamis</item>
+        <item>Jumat</item>
+        <item>Sabtu</item>
+        <item>Minggu</item>
+    </string-array>
+
+    <string name="today_is">Hari ini hari %1$s</string>
+    <string name="day_tommorow">Besok hari apa?</string>
+    <string name="day_yesterday">Kemarin hari apa?</string>
+    <string name="day_was">Hari apa %1$s hari yang lalu?</string>
+    <string name="day_will">Hari apa %1$s hari yang akan datang?</string>
+    <string name="question_sequence">Lengkapi deretan angka.</string>
+    <string name="question_textswitch_bot">Apakah angka ini ganjil?</string>
+    <string name="question_textswitch_top">Apakah huruf ini vokal?</string>
+    <string name="question_visualrotation">Apakah kedua kotak memiliki isi yang sama?</string>
+    <string name="stats_advertising">Iklan</string>
+    <string name="partly">SEBAGIAN</string>
+
+    <!-- Mulai Urusan Game -->
+
+    <string name="category_memory">Ingatan</string>
+    <string name="category_calculation">Hitungan</string>
+    <string name="category_focus">Fokus</string>
+    <string name="category_logic">Logika</string>
+    <string name="category_spatial">Kemampuan Ruang</string>
+
+    <string name="subcategory_verbal_memory">Ingatan Verbal</string>
+    <string name="subcategory_shortterm_memory">Ingatan Jangka Pendek</string>
+    <string name="subcategory_working_memory">Ingatan Aktif</string>
+    <string name="subcategory_visual_memory">Ingatan Visual</string>
+    <string name="subcategory_numerical_estimation">Estimasi Hitungan</string>
+    <string name="subcategory_numerical_processing">Pengolahan Angka</string>
+    <string name="subcategory_calculation_accuracy">Akurasi Hitungan</string>
+    <string name="subcategory_mental_agility">Kelincahan Berpikir</string>
+    <string name="subcategory_response_control">Kontrol Kendali</string>
+    <string name="subcategory_focus_speed">Kecepatan Fokus</string>
+    <string name="subcategory_comprehension">Fokus Visual</string>
+    <string name="subcategory_thinking_speed">Kecepatan Berpikir</string>
+    <string name="subcategory_information_processing">Pengolahan Informasi</string>
+    <string name="subcategory_pattern_recognition">Pemahaman Pola</string>
+    <string name="subcategory_spatial_awareness">Kepekaan Ruang</string>
+    <string name="subcategory_mental_rotation">Rotasi Mental</string>
+    <string name="subcategory_spatial_association">Asosiasi Ruang</string>
+    <string name="subcategory_visualization">Visualisasi</string>
+
+    <string name="game_title_verbalfrenzy" translatable="false">Hafalan Kata</string>
+    <string name="game_title_numberrecall" translatable="false">Mengingat Nomor</string>
+    <string name="game_title_digitspan" translatable="false">Angka Berurutan</string>
+    <string name="game_title_martialarts" translatable="false">Seni Bela Diri</string>
+
+    <string name="game_title_highestnumber" translatable="false">Nilai Tertinggi</string>
+    <string name="game_title_truefalse" translatable="false">Benar Salah</string>
+    <string name="game_title_exactvalue" translatable="false">Hitungan Cepat</string>
+    <string name="game_title_salary" translatable="false">Negosiasi Gaji</string>
+
+    <string name="game_title_differentshape" translatable="false">Cocok Bentuk</string>
+    <string name="game_title_colormatch" translatable="false">Cocok Warna</string>
+    <string name="game_title_objectfinder" translatable="false">Cari Benda</string>
+    <string name="game_title_uniqueone" translatable="false">Benda Paling Unik</string>
+
+    <string name="game_title_simpletrouble" translatable="false">Cocok Fakta</string>
+    <string name="game_title_textswitch" translatable="false">Cocok Huruf Angka</string>
+    <string name="game_title_dayofweek" translatable="false">Logika Hari</string>
+    <string name="game_title_sequence" translatable="false">Masalah Deretan</string>
+
+    <string name="game_title_featurematch" translatable="false">Kesamaan Kotak</string>
+    <string name="game_title_visualrotation" translatable="false">Rotasi Kotak</string>
+    <string name="game_title_partialshape" translatable="false">Bentuk Parsial</string>
+    <string name="game_title_spatialarithmetic" translatable="false">Aritmatika Ruang</string>
+
+    <!-- Category: Memory -->
+    <string name="desc_verbal_frenzy">
+        Hafalkan kata-kata yang kamu lihat. Bedakan antara kata baru dan kata yang sudah dilihat.
+    </string>
+    <string name="desc_numberrecall">
+        Berapa banyak nomor yang bisa kamu ingat?
+    </string>
+    <string name="desc_digitspan">
+        Kamu punya tiga nyawa. Hafalkan angka-angka yang bermunculan.
+    </string>
+    <string name="desc_martialarts">
+        Ingatan visual yang baik dibutuhkan dalam mempelajari gerakan bela diri. Dengan terus berlatih, kamu dapat
+        memperbaiki ingatan visualmu untuk belajar bela diri atau olahraga lainnya.
+    </string>
+
+    <!-- Category: Calculation -->
+    <string name="desc_highest_number">
+        Hitung operasi matematika secepat mungkin, kemudian tentukan nilai tertingginya.
+        Jawaban yang salah akan mengurangi skor.
+    </string>
+    <string name="desc_truefalse">
+        Tentukan apakah hasil dari operasi matematika benar atau salah.
+        Jawaban yang tidak tepat akan mengurangi skor.
+    </string>
+    <string name="desc_exactvalue">
+        Hitung operasi matematika secepat mungkin dan tentukan hasil pastinya.
+        Jawaban yang salah akan mengurangi skor.
+    </string>
+    <string name="desc_salary">
+        Bosmu baru saja memberikan kamu kesempatan untuk menaikki gajimu.
+        Dalam 60 detik, kamu akan bernegosiasi dengan bosmu. Dapatkah kamu memenangkan gaji tertinggi?
+    </string>
+
+    <!-- Category: Attention -->
+    <string name="desc_differentshape">
+        Ingatlah bentuk yang kamu lihat, kemudian tentukan apakah bentuk ini sama dengan bentuk sebelumnya.
+        Jawaban yang salah akan mengurangi skor.
+    </string>
+    <string name="desc_colormatch">
+        Secepat mungkin tentukan apakah arti sesuai dengan warna atau tidak.
+        Jawaban yang salah akan mengurangi skor.
+    </string>
+    <string name="desc_objectfinder">
+        Kamu harus menemukan bentuk yang sudah ditentukan.
+        Temukan secepat mungkin!
+    </string>
+    <string name="desc_uniqueone">
+        Kamu harus menemukan bentuk paling unik di antara bentuk lainnya. Temukan sebanyak mungkin!
+    </string>
+
+    <!-- Category: Reasoning -->
+    <string name="desc_simpletrouble">
+        Tentukan apakah fakta yang kamu lihat sesuai dengan pertanyaan atau tidak.
+        Jawaban yang salah akan mengurangi skor.
+    </string>
+    <string name="desc_textswitch">
+        Tentukan apakah fakta yang kamu lihat sesuai dengan pertanyaan atau tidak.
+        Jawaban yang salah akan mengurangi skor.
+        \n[TIP] <i>Huruf vokal: A, I, U, E, O. Angka ganjil: 1, 3, 5, 7, 9.</i>
+    </string>
+    <string name="desc_dayofweek">
+        Dalam 90 detik, tentukan hari yang dimaksud sebanyak mungkin.
+    </string>
+    <string name="desc_sequence">
+        Kamu akan melihat sederet angka yang berpola. Tugasmu adalah mengisi bagian kosong (?) untuk melengkapinya.
+    </string>
+
+    <!-- Category: Spatial -->
+    <string name="desc_featurematch">
+        Bisakah kamu menentukan bahwa kedua kotak memiliki isi yang sama atau tidak?
+        Jawaban yang salah akan mengurangi skor.
+    </string>
+
+    <string name="desc_visualrotation">
+        Jika kamu bisa memutar kotak di kepalamu,
+        dapatkah kamu menentukan apakah isi dari kedua kotak itu sama atau tidak?
+        Jawaban yang salah akan mengurangi skor.
+    </string>
+    <string name="desc_partialshape">
+        Ingatlah bentuk sebelumnya. Jika bentuk dan warna sama, pilih Ya.
+        Jika hanya warna yang sama, pilih Sebagian.
+        Jika bentuk sama tetapi warna berbeda, pilih Sebagian.
+        Jika tidak ada yang sama, pilih Tidak.
+        Jawaban yang salah akan mengurangi skor.
+    </string>
+    <string name="desc_spatialarithmetic">
+        Lakukan operasi seperti di matematika pada umumnya. Bedanya kalau di sini kamu bisa menempatkan atau menghilangkan
+        suatu bentuk.
+    </string>
+
+    <!-- Tingkat Lanjut -->
+
+    <string name="plus_sign">+</string>
+    <string name="exit_neurality">Keluar Neurality</string>
+    <string name="are_you_sure">Apakah kamu yakin ingin keluar dari Neurality?</string>
+    <string name="enter_your_name">Nama Kamu…</string>
+    <string name="description">Deskripsi</string>
+    <string name="tutorial_included">Petunjuk untuk permainan ini sudah disediakan di dalamnya.</string>
+
+    <string name="tutorial_verbalfrenzy">
+        [SEEN: Baru] - [NEW: Dilihat]
+        \nKetuk \"Baru\" jika kamu belum pernah melihat kata.
+        Sebaliknya, ketuk \"Dilihat\" jika kamu sudah pernah melihatnya.
+    </string>
+    <string name="feedback_title">Kami Siap Mendengar Anda</string>
+    <string name="enter_your_message_here">Ketik pesan Anda di sini…</string>
+    <string name="please_enter_message">Mohon masukkan pesan Anda</string>
+    <string name="thanks_feedback">Terima kasih atas umpan baliknya!</string>
+    <string name="overall_neurality_performance">Ini adalah kinerja keseluruhan Anda.</string>
+    <string name="play_over_20_brain_games_that_challenges_your_memory_logic_and_more">
+        Mainkan hingga 20 permainan otak yang menantang ingatan, konsentrasi, dan lainnya.</string>
+    <string name="premium_not_available_msg">Maaf, Neurality Premium saat ini belum tersedia di negara Anda.</string>
+    <string name="not_available_msg">Belum Tersedia</string>
+    <string name="good_news">Kabar Gembira</string>
+    <string name="premium_available_msg">Neurality Premium sekarang sudah tersedia!</string>
+    <string name="get_it_now">Dapatkan sekarang</string>
+    <string name="sorry_premium_game">Mainkan permainan ini sekarang dengan mendapatkan Neurality Premium.</string>
+    <string name="duplicate_email">Email yang kamu gunakan sudah pernah terdaftar dengan provider lain. Silahkan gunakan akun yang lain.</string>
+    <string name="your_performance">Kinerja</string>
+
+    <string name="get_free_energy">Tambah Energi Gratis</string>
+    <string name="msg_watch_video_ad">Tonton video hingga selesai untuk mendapatkan energimu.</string>
+    <string name="add_energy">Tambah</string>
+    <string name="referral_title">KASIH SATU, DAPAT SATU!</string>
+    <string name="referral_description">Menikmati Neurality? Undang temanmu untuk mencoba Neurality. Nanti kalian berdua akan mendapatkan gratis Neurality Premium selama 3 hari.</string>
+    <string name="referral_btn">UNDANG TEMANMU</string>
+    <string name="help_sign">\?</string>
+    <string name="train_get_free_premium">Premium Gratis Tersedia</string>
+    <string name="arrow_right"><![CDATA[>]]></string>
+    <string name="prefs_desc_free_premium">Menikmati Neurality? Dapatkan Premium gratismu di sini.</string>
+    <string name="prefs_help">Bantuan</string>
+    <string name="referral_link_title">Neurality: Aplikasi Pelatih Otak</string>
+    <string name="referral_link_desc">Klaim Neurality Premium gratis milikmu. Mulai latih otakmu!</string>
+    <string name="referral_share_msg">
+        Buruan download Neurality aplikasi pelatih otak, nanti kita dapat 3 hari gratis Neurality Premium!\n
+        %1$s
+    </string>
+    <string name="feature_notavailable">Maaf, fitur ini tidak tersedia di perangkatmu. Tetap tunggu hingga update berikutnya!</string>
+    <string name="signin_referral_invalid">Undangan tidak valid. Perangkat sama atau akun sudah pernah didaftarkan.</string>
+    <string name="signin_referral_valid">Berhasil sign in lewat program undangan. Nikmati gratis Neurality Premium selama 3 hari!</string>
+    <string name="signin_referral_using_invitation">Jalur undangan. Lanjut sign in untuk klaim gratis Neurality Premium milikmu.</string>
+    <string name="signin_welcome_premium">Selamat Datang di Neurality Premium</string>
+    <string name="signin_skip">Nanti</string>
+    <string name="signin_dialog_age">Berapa tahun usia kamu? Silahkan pilih kelompok usiamu.</string>
+    <string name="signin_dialog_overeighteen">18 atau lebih</string>
+    <string name="signin_dialog_undereighteen">Di bawah 18</string>
+    <string name="signin_dialog_anonymous_warning">Kamu tidak akan bisa menyimpan data latihan ke perangkat yang berbeda hingga kamu sign in. Kamu yakin?</string>
+    <string name="signin_dialog_anonymous_continue">Lanjut</string>
+    <string name="signin_dialog_anonymous_back">Kembali</string>
+    <string name="dialog_must_authenticated">Kamu harus sign in terlebih dahulu untuk melihat halaman ini.</string>
+    <string name="msg_browser_error">Tidak dapat membuka browser. Pastikan terdapat browser (seperti Google Chrome) di perangkatmu.</string>
+    <string name="pref_uid_placeholder">UID: %1$s</string>
+    <string name="pref_version_placeholder">Neurality v%1$s (%2$s)</string>
+</resources>

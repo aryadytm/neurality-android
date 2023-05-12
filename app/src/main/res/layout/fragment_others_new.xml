@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="96dp"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/bg_sky">
+
+            <ImageView
+                android:id="@+id/image_avatar"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="32dp"
+                android:scaleX="1.25"
+                android:scaleY="1.25"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_person" />
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/image_avatar"
+                app:layout_constraintStart_toEndOf="@+id/image_avatar"
+                app:layout_constraintTop_toTopOf="@+id/image_avatar"
+                app:layout_constraintVertical_bias="0.3"
+                tools:text="Albert Einstein" />
+
+            <TextView
+                android:id="@+id/text_nq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/image_avatar"
+                app:layout_constraintTop_toBottomOf="@+id/text_name"
+                tools:text="160 NQ" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/title_account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <View
+                android:id="@+id/icon_title_account"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="5" />
+
+            <TextView
+                android:id="@+id/text_account"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="15"
+                android:text="@string/pref_account"
+                android:textColor="@color/blue" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clickable_get_premium"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="0dp"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="5"
+                app:srcCompat="@drawable/ic_pref_crown" />
+
+            <LinearLayout
+                android:id="@+id/vertical_linear_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_get_premium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/get_premium_settings"
+                    android:textColor="@color/text_darkgray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_desc_get_premium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/stop_wait_for_energy"
+                    android:textColor="@color/gnt_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clickable_free_premium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:paddingStart="0dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:weightSum="20">
+
+            <ImageView
+                android:id="@+id/icon_free_premium"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="5"
+                app:srcCompat="@drawable/ic_pref_ticket" />
+
+            <LinearLayout
+                android:id="@+id/vertical_linear_layout_free_premium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_free_premium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/train_get_free_premium"
+                    android:textColor="@color/text_darkgray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_desc_free_premium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/prefs_desc_free_premium"
+                    android:textColor="@color/gnt_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clickable_sign_out"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="0dp"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <ImageView
+                android:id="@+id/icon_sign_out"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="5"
+                android:scaleX="1"
+                android:scaleY="0.8"
+                app:srcCompat="@drawable/ic_pref_exit" />
+
+            <LinearLayout
+                android:id="@+id/vertical_linear_layout_sign_out"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_sign_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/sign_out_text"
+                    android:textColor="@color/text_darkgray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_desc_sign_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/please_sign_out"
+                    android:textColor="@color/gnt_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/title_neurality"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <View
+                android:id="@+id/icon_title_neurality"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="5" />
+
+            <TextView
+                android:id="@+id/text_neurality"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="15"
+                android:text="@string/pref_neurality"
+                android:textColor="@color/blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clickable_message_us"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="0dp"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <ImageView
+                android:id="@+id/icon_message_us"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="5"
+                app:srcCompat="@drawable/ic_pref_message" />
+
+            <LinearLayout
+                android:id="@+id/vertical_linear_layout_message_us"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_message_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/pref_feedback"
+                    android:textColor="@color/text_darkgray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_desc_message_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/pref_feedback_subtitle"
+                    android:textColor="@color/gnt_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clickable_help"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="0dp"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <ImageView
+                android:id="@+id/icon_help"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="5"
+                app:srcCompat="@drawable/ic_pref_help" />
+
+            <TextView
+                android:id="@+id/text_help"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="15"
+                android:fontFamily="@font/roboto"
+                android:text="@string/prefs_help"
+                android:textColor="@color/text_darkgray"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clickable_terms_of_service"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="0dp"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <ImageView
+                android:id="@+id/icon_terms_of_service"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="5"
+                app:srcCompat="@drawable/ic_pref_service" />
+
+            <TextView
+                android:id="@+id/text_terms_of_service"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="15"
+                android:fontFamily="@font/roboto"
+                android:text="@string/terms_of_service"
+                android:textColor="@color/text_darkgray"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clickable_privacy_policy"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:paddingStart="0dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:weightSum="20">
+
+            <ImageView
+                android:id="@+id/clickable_privacy_policy_icon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="2dp"
+                android:layout_weight="5"
+                app:srcCompat="@drawable/ic_pref_privacy" />
+
+            <TextView
+                android:id="@+id/clickable_privacy_policy_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="15"
+                android:fontFamily="@font/roboto"
+                android:text="@string/privacy_policy"
+                android:textColor="@color/text_darkgray"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/unclickable_version"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:paddingStart="0dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:weightSum="20">
+
+            <ImageView
+                android:id="@+id/unclickable_icon_version"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="5"
+                app:srcCompat="@drawable/ic_icons8_merge_git" />
+
+            <LinearLayout
+                android:id="@+id/vertical_linear_layout_version"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/unclickable_version_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/app_name"
+                    android:textColor="@color/text_darkgray"
+                    android:textSize="16sp"
+                    tools:text="Neurality" />
+
+                <TextView
+                    android:id="@+id/unclickable_version_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/gnt_gray"
+                    android:textSize="14sp"
+                    tools:text="UID: 123" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

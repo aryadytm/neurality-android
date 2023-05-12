@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.wemadefun.neurality.ui.traindetails.TrainDetailsViewModel"
+            />
+        <variable
+            name="energyViewModel"
+            type="com.wemadefun.neurality.ui.EnergyViewModel"
+            />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/card_details_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="32dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:background="@drawable/bg_sky"
+                    android:elevation="8dp">
+
+                    <ImageView
+                        android:id="@+id/button_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:adjustViewBounds="false"
+                        android:background="@drawable/ic_back_36dp"
+                        android:foregroundGravity="center_vertical"
+                        android:scaleType="fitStart"
+                        android:scaleX="0.8"
+                        android:scaleY="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_toEndOf="@id/button_back"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center_vertical"
+                        android:scrollbarSize="0dp"
+                        android:text="@string/workout_details"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:text="@string/workout_details" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/image_game"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:contentDescription="@string/game_preview"
+                    android:scaleType="centerCrop"
+                    tools:srcCompat="@drawable/ic_launcher_background" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/text_darkgray"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="@{viewModel.title}"
+                        android:textColor="@color/gnt_white"
+                        android:textSize="24sp"
+                        tools:text="Verbal Frenzy" />
+
+                    <TextView
+                        android:id="@+id/text_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/roboto_light"
+                        android:paddingBottom="8dp"
+                        android:text="@{viewModel.category}"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        tools:text="Memory" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_subcategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="@{viewModel.subCategory}"
+                    android:textColor="@color/sky_start"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="Verbal Memory" />
+
+                <TextView
+                    android:id="@+id/text_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@{viewModel.description}"
+                    android:textColor="@color/gnt_gray"
+                    android:textSize="14sp"
+                    tools:text="@string/desc_verbal_frenzy" />
+
+                <TextView
+                    android:id="@+id/_text_high_score_dummy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="@string/high_score"
+                    android:textColor="@color/sky_start"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="High Score" />
+
+                <TextView
+                    android:id="@+id/text_high_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@{viewModel.highScore}"
+                    android:textColor="@color/gnt_gray"
+                    android:textSize="14sp"
+                    tools:text="122" />
+            </LinearLayout>
+        </ScrollView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_details_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            app:cardElevation="4dp"
+            app:cardMaxElevation="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:padding="4dp">
+
+                <Button
+                    android:id="@+id/button_start"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/curved_blue_24dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:onClick="@{() -> energyViewModel.onNavigateToGame()}"
+                    android:text="@string/start"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/button_tutorial"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="@string/start" />
+
+                <Button
+                    android:id="@+id/button_start_locked"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/curved_gray_24dp"
+                    android:drawableStart="@drawable/ic_icons8_lock"
+                    android:drawablePadding="-24dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:paddingStart="24dp"
+                    android:text="@string/start"
+                    android:textColor="@color/text_darkgray"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/button_tutorial"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="RtlSymmetry"
+                    tools:text="@string/start" />
+
+                <Button
+                    android:id="@+id/button_tutorial"
+                    android:layout_width="125dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/curved_gray_24dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:onClick="@{() -> viewModel.onButtonTutorialClick()}"
+                    android:text="@string/tutorial"
+                    android:textColor="@color/text_darkgray"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="@string/tutorial" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_sign_in">
+
+    <!--Global actions-->
+    <action
+        android:id="@+id/action_sign_in"
+        app:destination="@id/nav_sign_in"
+        app:popUpTo="@id/mobile_navigation"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_train"
+        app:destination="@id/nav_train"
+        app:popUpTo="@id/mobile_navigation"
+        app:popUpToInclusive="true"
+        app:enterAnim="@anim/fade_in"/>
+
+    <action
+        android:id="@+id/action_stats"
+        app:destination="@id/nav_stats"
+        app:popUpTo="@id/mobile_navigation"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_others"
+        app:destination="@id/nav_others"
+        app:popUpTo="@id/mobile_navigation"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_tutorial"
+        app:destination="@id/nav_tutorial"
+        app:enterAnim="@anim/fade_in"/>
+
+    <action android:id="@+id/action_train_details"
+        app:destination="@id/nav_train_details"/>
+
+    <action
+        android:id="@+id/action_get_ready"
+        app:destination="@id/nav_get_ready"
+        app:enterAnim="@anim/slide_in_right"
+        app:popUpTo="@id/nav_train" />
+
+    <action android:id="@+id/action_game_pause"
+        app:destination="@id/nav_game_pause"/>
+
+    <action android:id="@+id/action_game_over"
+        app:destination="@id/nav_game_over"
+        app:popUpTo="@id/nav_train"
+        app:enterAnim="@anim/fade_in"/>
+
+    <action android:id="@+id/action_share"
+        app:destination="@id/nav_share"
+        app:enterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/slide_out_right"
+        />
+
+    <action android:id="@+id/action_feedback"
+        app:destination="@id/nav_feedback"
+        app:enterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/slide_out_right"
+        />
+
+    <action android:id="@+id/action_referral"
+        app:destination="@id/nav_referral"
+        app:enterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/slide_out_right"
+        />
+
+    <action android:id="@+id/action_help"
+        app:destination="@id/nav_help"
+        app:enterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/slide_out_right"
+        />
+
+    <action
+        android:id="@+id/action_subscription"
+        app:destination="@id/nav_subscription"
+        app:enterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <!--Defined Games-->
+
+    <action android:id="@+id/action_game_verbalfrenzy"
+        app:destination="@id/nav_game_verbalfrenzy"/>
+
+    <action android:id="@+id/action_game_highestnumber"
+        app:destination="@id/nav_game_highestnumber" />
+
+    <action android:id="@+id/action_game_differentshape"
+        app:destination="@+id/nav_game_differentshape" />
+
+    <action android:id="@+id/action_game_simpletrouble"
+        app:destination="@+id/nav_game_simpletrouble" />
+
+    <action android:id="@+id/action_game_featurematch"
+        app:destination="@+id/nav_game_featurematch" />
+
+    <action android:id="@+id/action_game_numberrecall"
+        app:destination="@+id/nav_game_numberrecall" />
+
+    <action android:id="@+id/action_game_digitspan"
+        app:destination="@+id/nav_game_digitspan" />
+
+    <action android:id="@+id/action_game_martialarts"
+        app:destination="@+id/nav_game_martialarts" />
+
+    <action android:id="@+id/action_game_truefalse"
+        app:destination="@+id/nav_game_truefalse" />
+
+    <action android:id="@+id/action_game_exactvalue"
+        app:destination="@+id/nav_game_exactvalue" />
+
+    <action android:id="@+id/action_game_salary"
+        app:destination="@+id/nav_game_salary" />
+
+    <action android:id="@+id/action_game_colormatch"
+        app:destination="@+id/nav_game_colormatch" />
+
+    <action android:id="@+id/action_game_objectfinder"
+        app:destination="@+id/nav_game_objectfinder" />
+
+    <action android:id="@+id/action_game_uniqueone"
+        app:destination="@+id/nav_game_uniqueone" />
+
+    <action android:id="@+id/action_game_dayofweek"
+        app:destination="@+id/nav_game_dayofweek" />
+
+    <action android:id="@+id/action_game_sequence"
+        app:destination="@+id/nav_game_sequence" />
+
+    <action android:id="@+id/action_game_textswitch"
+        app:destination="@+id/nav_game_textswitch" />
+
+    <action android:id="@+id/action_game_visualrotation"
+        app:destination="@+id/nav_game_visualrotation" />
+
+    <action android:id="@+id/action_game_partialshape"
+        app:destination="@+id/nav_game_partialshape" />
+
+    <action android:id="@+id/action_game_spatialarithmetic"
+        app:destination="@+id/nav_game_spatial_arithmetic" />
+
+    <!--Defined Navigations-->
+    <fragment
+        android:id="@+id/nav_stats"
+        android:name="com.wemadefun.neurality.ui.stats.StatsFragment"
+        android:label="@string/title_stats"
+        tools:layout="@layout/fragment_stats" />
+
+    <fragment
+        android:id="@+id/nav_train"
+        android:name="com.wemadefun.neurality.ui.train.TrainFragment"
+        android:label="@string/title_train"
+        tools:layout="@layout/fragment_train" >
+        <action
+            android:id="@+id/action_nav_train_to_nav_train_details"
+            app:destination="@id/nav_train_details"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_train_details"
+        android:name="com.wemadefun.neurality.ui.traindetails.TrainDetailsFragment"
+        android:label="@string/title_train"
+        tools:layout="@layout/fragment_train_details">
+        <argument
+            android:name="argGameData"
+            app:argType="com.wemadefun.neurality.utils.GameProvider$GameData" />
+        <action
+            android:id="@+id/action_nav_train_details_to_nav_get_ready"
+            app:destination="@id/nav_get_ready"
+            app:enterAnim="@anim/slide_in_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_game_verbalfrenzy"
+        android:name="com.wemadefun.neurality.ui.games.verbalfrenzy.VerbalFrenzyGameFragment"
+        android:label="@string/verbalfrenzy"
+        tools:layout="@layout/fragment_game_verbalfrenzy" />
+
+    <fragment
+        android:id="@+id/nav_game_over"
+        android:name="com.wemadefun.neurality.ui.eventgameover.GameOverFragment"
+        tools:layout="@layout/fragment_gameover"
+        android:label="@string/good_job" >
+        <argument
+            android:name="argScore"
+            app:argType="string" />
+        <argument
+            android:name="argGameData"
+            app:argType="com.wemadefun.neurality.utils.GameProvider$GameData" />
+        <action
+            android:id="@+id/action_nav_game_over_to_nav_share"
+            app:destination="@id/nav_share"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_game_pause"
+        android:name="com.wemadefun.neurality.ui.eventgamepause.GamePausedFragment"
+        android:label="Game Paused"
+        tools:layout="@layout/fragment_gamepaused" >
+        <argument
+            android:name="argGameData"
+            app:argType="com.wemadefun.neurality.utils.GameProvider$GameData" />
+        <argument android:name="argScore"
+            app:argType="string" />
+        <argument
+            android:name="argBackground"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_get_ready"
+        android:name="com.wemadefun.neurality.ui.eventgetready.GetReadyFragment"
+        android:label="@string/get_ready"
+        tools:layout="@layout/fragment_getready" >
+        <argument
+            android:name="argGameData"
+            app:argType="com.wemadefun.neurality.utils.GameProvider$GameData" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_sign_in"
+        android:name="com.wemadefun.neurality.ui.signin.SignInFragment"
+        android:label="@string/sign_in"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_nav_sign_in_to_nav_train"
+            app:destination="@id/nav_train"
+            app:enterAnim="@anim/fade_in"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_tutorial"
+        android:name="com.wemadefun.neurality.ui.tutorial.TutorialFragment"
+        android:label="@string/tutorial" >
+        <argument
+            android:name="argGameData"
+            app:argType="com.wemadefun.neurality.utils.GameProvider$GameData" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_subscription"
+        android:name="com.wemadefun.neurality.ui.subscription.SubscriptionFragment"
+        android:label="Subscription" />
+    <fragment
+        android:id="@+id/nav_game_highestnumber"
+        android:name="com.wemadefun.neurality.ui.games.highestnumber.HighestNumberGameFragment"
+        android:label="@string/game_title_highestnumber" />
+    <fragment
+        android:id="@+id/nav_game_differentshape"
+        android:name="com.wemadefun.neurality.ui.games.differentshape.DifferentShapeFragment"
+        android:label="Different Shape" />
+    <fragment
+        android:id="@+id/nav_game_simpletrouble"
+        android:name="com.wemadefun.neurality.ui.games.simpletrouble.SimpleTroubleFragment"
+        android:label="Task Trouble" />
+    <fragment
+        android:id="@+id/nav_game_featurematch"
+        android:name="com.wemadefun.neurality.ui.games.featurematch.FeatureMatchFragment"
+        android:label="Feature Match" />
+    <fragment
+        android:id="@+id/nav_game_numberrecall"
+        android:name="com.wemadefun.neurality.ui.games.numberrecall.NumberRecallFragment"
+        android:label="Number Recall" />
+    <fragment
+        android:id="@+id/nav_game_digitspan"
+        android:name="com.wemadefun.neurality.ui.games.digitspan.DigitSpanFragment"
+        android:label="Digit Span" />
+    <fragment
+        android:id="@+id/nav_game_martialarts"
+        android:name="com.wemadefun.neurality.ui.games.martialarts.MartialArtsFragment"
+        android:label="Martial Arts" />
+    <fragment
+        android:id="@+id/nav_game_truefalse"
+        android:name="com.wemadefun.neurality.ui.games.truefalse.TrueFalseFragment"
+        android:label="True False" />
+    <fragment
+        android:id="@+id/nav_game_exactvalue"
+        android:name="com.wemadefun.neurality.ui.games.exactvalue.ExactValueFragment"
+        android:label="Exact Value" />
+    <fragment
+        android:id="@+id/nav_game_salary"
+        android:name="com.wemadefun.neurality.ui.games.salary.SalaryFragment"
+        android:label="Salary Negotiation" />
+    <fragment
+        android:id="@+id/nav_game_colormatch"
+        android:name="com.wemadefun.neurality.ui.games.colormatch.ColorMatchFragment"
+        android:label="Color Match" />
+    <fragment
+        android:id="@+id/nav_game_objectfinder"
+        android:name="com.wemadefun.neurality.ui.games.objectfinder.ObjectFinderFragment"
+        android:label="Object Finder" />
+    <fragment
+        android:id="@+id/nav_game_uniqueone"
+        android:name="com.wemadefun.neurality.ui.games.uniqueone.UniqueOneFragment"
+        android:label="Unique One" />
+    <fragment
+        android:id="@+id/nav_game_dayofweek"
+        android:name="com.wemadefun.neurality.ui.games.dayofweek.DayOfWeekFragment"
+        android:label="Day Of the Week" />
+    <fragment
+        android:id="@+id/nav_game_sequence"
+        android:name="com.wemadefun.neurality.ui.games.sequence.SequenceFragment"
+        android:label="Sequence Problem" />
+    <fragment
+        android:id="@+id/nav_game_textswitch"
+        android:name="com.wemadefun.neurality.ui.games.textswitch.TextSwitchFragment"
+        android:label="Text Switch" />
+    <fragment
+        android:id="@+id/nav_game_visualrotation"
+        android:name="com.wemadefun.neurality.ui.games.visualrotation.VisualRotationFragment"
+        android:label="Visual Rotation" />
+    <fragment
+        android:id="@+id/nav_game_partialshape"
+        android:name="com.wemadefun.neurality.ui.games.partialmatch.PartialShapeFragment"
+        android:label="Partial Shape" />
+    <fragment
+        android:id="@+id/nav_game_spatial_arithmetic"
+        android:name="com.wemadefun.neurality.ui.games.spatialarithmetic.SpatialArithmeticFragment"
+        android:label="Spatial Arithmetic" />
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.wemadefun.neurality.ui.share.ShareFragment"
+        android:label="Share" >
+        <argument
+            android:name="argGameData"
+            app:argType="com.wemadefun.neurality.utils.GameProvider$GameData" />
+        <argument
+            android:name="argScore"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_feedback"
+        android:name="com.wemadefun.neurality.ui.feedback.FeedbackFragment"
+        android:label="Feedback" />
+    <fragment
+        android:id="@+id/nav_others"
+        android:name="com.wemadefun.neurality.ui.others.OthersFragment"
+        android:label="Others" />
+    <fragment
+        android:id="@+id/nav_referral"
+        android:name="com.wemadefun.neurality.ui.referral.ReferralFragment"
+        android:label="Referral" />
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.wemadefun.neurality.ui.help.HelpFragment"
+        android:label="Help" />
+
+</navigation>

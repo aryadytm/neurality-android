@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A RecyclerView with some commonly used attributes -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@drawable/curved_white_10dp"
+    app:cardCornerRadius="10dp"
+    tools:layout_editor_absoluteX="16dp"
+    tools:layout_editor_absoluteY="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_sunset"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:paddingEnd="4dp"
+                android:textColor="@color/white"
+                tools:ignore="RtlSymmetry"
+                tools:text="Energy:" />
+
+            <TextView
+                android:id="@+id/text_energy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:textColor="@color/white"
+                tools:text="2/5" />
+
+            <TextView
+                android:id="@+id/text_next_energy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:gravity="end"
+                android:textColor="@color/white"
+                tools:text="14:31" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/text_premium_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginRight="42dp"
+                android:fontFamily="@font/roboto_mono_medium"
+                android:gravity="center"
+                android:textColor="#595959"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Train Your Brain Anytime" />
+
+            <Button
+                android:id="@+id/button_start_trial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/curved_apple_24dp"
+                android:fontFamily="@font/roboto_mono_medium"
+                android:text="@string/start_your_free_trial"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

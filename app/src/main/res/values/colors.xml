@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="fullTransparent">#00000000</color>
+
+    <color name="grayBackground">#E0E0E0</color>
+    <color name="grayUiBackground">#FFE4EBF1</color>
+    <color name="grayTrainBackground">#F1F6FA</color>
+    <color name="score_indicator">#16B1E1</color>
+    <color name="nq_indicator">#0090FF</color>
+
+    <color name="verbalFrenzy">#FFB300</color>
+    <color name="verbalFrenzySecondary">#C5B000</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow_color">#FDD835</color>
+    <color name="another_yellow">#FDD835</color>
+    <color name="button_activated">#43A047</color>
+    <color name="material_blue">#039BE5</color>
+    <color name="mat_green">#43A047</color>
+    <color name="darky_white">#F0F0F0</color>
+
+    <color name="green">#43A047</color>
+    <color name="blue">#1E88E5</color>
+
+    <color name="red">#E53935</color>
+    <color name="yellow">#FDD835</color>
+
+    <color name="sunset_start">#696DFF</color>
+    <color name="sunset_end">#C760FF</color>
+
+    <color name="sunset_start_ori">#F4821E</color>
+    <color name="sunset_end_ori">#FFD000</color>
+
+    <color name="sky_start">#3384fc</color>
+    <color name="sky_end">#00c6ff</color>
+
+    <color name="greensky_start">#00AE3A</color>
+    <color name="greensky_end">#C8FF00</color>
+
+    <color name="night_start">#211637</color>
+    <color name="night_end">#3A1F71</color>
+
+    <color name="cloud_start">#696DFF</color>
+    <color name="cloud_end">#C760FF</color>
+
+    <color name="text_darkgray">#37474f</color>
+    <color name="text_gray">#A6B9D1</color>
+    <color name="text_blue">#72A2EA</color>
+    <color name="text_blue_ori">#68CDEC</color>
+
+
+    <color name="lightsky_start">#4A8CD6</color>
+    <color name="lightsky_end">#8FDDE1</color>
+
+    <color name="purplesky_start">#535BA3</color>
+    <color name="purplesky_end">#AE90F6</color>
+
+    <color name="yellowsky_start">#D37F1F</color>
+    <color name="yellowsky_end">#D5A12B</color>
+
+    <color name="aquasky_start">#AB00DA</color>
+    <color name="aquasky_end">#E85092</color>
+
+    <color name="bluish_start">#334C9C</color>
+    <color name="bluish_end">#4D6FDD</color>
+
+    <color name="cyanish_start">#0092A5</color>
+    <color name="cyanish_end">#3EA6F6</color>
+
+    <color name="pinkish_start">#A34D7E</color>
+    <color name="pinkish_end">#F7768A</color>
+
+    <color name="orangish_start">#D85C40</color>
+    <color name="orangish_end">#FF7D63</color>
+
+    <color name="yellowish_start">#D37F1F</color>
+    <color name="yellowish_end">#D6A02C</color>
+
+</resources>
