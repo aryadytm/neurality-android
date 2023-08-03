@@ -1,9 +1,11 @@
 # Neurality
-Android Brain Training App with Over 20 Brain Games.
+Android brain training app with over 20 brain games designed to improve thinking. Download Here: [Google Play Store](https://play.google.com/store/apps/details?id=com.wemadefun.neurality).
 
-## Note
+![Neurality Picture](https://i.ibb.co/xzSNMRb/Chat-Magic-AI-4.png)
 
-The source code provided here is incomplete because further cleaning is needed to prevent sensitive information from being leaked.
+## Video Demo
+
+[https://www.youtube.com/watch?v=t328VWs4Ph8](https://www.youtube.com/watch?v=t328VWs4Ph8)
 
 ## Description
 
@@ -33,7 +35,3 @@ While Neurality was designed to boost productivity, focus, and mindfulness, user
 - OOP (object oriented programming) concept
 - Dependency injection concept
 - MVVM (Model-View-ViewModel) architecture
-
-## Video Teaser
-
-[https://www.youtube.com/watch?v=t328VWs4Ph8](https://www.youtube.com/watch?v=t328VWs4Ph8)
